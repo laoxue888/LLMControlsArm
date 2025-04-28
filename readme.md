@@ -1,7 +1,6 @@
 ﻿
 ---
 
-@[toc]
 # 前言
 
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/e0002780deb04b4880c2195fd658b707.gif#pic_center)

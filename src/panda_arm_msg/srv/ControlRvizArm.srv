@@ -1,0 +1,8 @@
+# 位置
+float64[] position
+# 开合
+string open_or_close
+---
+# 是否发出成功
+bool success
+

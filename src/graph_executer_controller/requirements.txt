@@ -1,0 +1,21 @@
+# python=3.12
+pyside6==6.8.3
+pytz==2025.2
+pandas==2.2.3
+pyinstaller==6.12.0
+mkdocs==1.6.1
+mkdocs-material==9.5.40
+py7zr==0.22.0
+nptdms==1.10.0
+pillow==11.1.0
+nodegraphqt==0.6.38
+SpeechRecognition[whisper-local]==3.14.2
+PyAudio==0.2.14
+pyttsx3==2.98
+openai==1.74.0
+vosk==0.3.45
+ChatTTS==0.2.3
+edge-tts
+playsound
+# 安装pytorch
+# pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124

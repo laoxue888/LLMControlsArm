@@ -22,7 +22,11 @@
 > - [JSON Output](https://api-docs.deepseek.com/zh-cn/guides/json_mode)
 > - [DeepSeek提示库](https://api-docs.deepseek.com/zh-cn/prompt-library/)
 
-video：[【代码】通过DeepSeek大语言模型控制panda机械臂，听懂人话，拟人性回答。智能机械臂助手又进一步啦](https://www.bilibili.com/video/BV15ALCzNE9S/?vd_source=3bf4271e80f39cfee030114782480463)
+video：
+
+- [【代码】通过DeepSeek大语言模型控制panda机械臂，听懂人话，拟人性回答。智能机械臂助手又进一步啦](https://www.bilibili.com/video/BV15ALCzNE9S/?vd_source=3bf4271e80f39cfee030114782480463)
+
+- [超实用的panda机械臂末端位置编排方法](https://www.bilibili.com/video/BV17zGmzLEUL/?vd_source=3bf4271e80f39cfee030114782480463)
 
 # 环境配置
 

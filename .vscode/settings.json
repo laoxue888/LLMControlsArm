@@ -1,19 +1,10 @@
 {
     "python.autoComplete.extraPaths": [
-        "/root/llm_controls_arm_ws/install/unity_control_example/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/ros_tcp_endpoint/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/pymoveit2/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/niryo_moveit/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/panda_arm_msg/lib/python3.12/site-packages",
+        "/home/xsf/Documents/llm_controls_arm_ws/install/panda_arm_msg/lib/python3.12/site-packages",
         "/opt/ros/jazzy/lib/python3.12/site-packages"
     ],
     "python.analysis.extraPaths": [
-        "/root/llm_controls_arm_ws/install/unity_control_example/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/ros_tcp_endpoint/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/pymoveit2/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/niryo_moveit/lib/python3.12/site-packages",
-        "/root/llm_controls_arm_ws/install/panda_arm_msg/lib/python3.12/site-packages",
+        "/home/xsf/Documents/llm_controls_arm_ws/install/panda_arm_msg/lib/python3.12/site-packages",
         "/opt/ros/jazzy/lib/python3.12/site-packages"
     ],
-    "idf.pythonInstallPath": "D:\\Espressif\\tools\\idf-python\\3.11.2\\python.exe"
 }

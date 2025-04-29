@@ -1,10 +1,9 @@
 
 ---
 
+[TOC]
 
 # 前言
-
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/e0002780deb04b4880c2195fd658b707.gif#pic_center)
 
 通过使用智能化的工作流控制系统来精确操控机械臂，不仅能够基于预设算法可靠地规划每个动作步骤的执行顺序和力度，确保作业流程的标准化和可重复性，还能通过模块化的程序设计思路灵活地在原有工作流中插入新的控制节点，这种可扩展的架构设计使得系统能够在不影响既有功能稳定性的前提下，便捷地集成诸如视觉识别、力反馈调节或协同作业等进阶功能模块，从而持续提升机械臂在复杂工业场景中的适应性和多功能性。
 
@@ -13,10 +12,6 @@
 > 参考：
 > - [JSON Output](https://api-docs.deepseek.com/zh-cn/guides/json_mode)
 > - [DeepSeek提示库](https://api-docs.deepseek.com/zh-cn/prompt-library/)
-
-video：[【有趣】通过DeepSeek大语言模型控制panda机械臂，听懂人话，拟人性回答。智能机械臂助手又进一步啦](https://www.bilibili.com/video/BV15ALCzNE9S/?vd_source=3bf4271e80f39cfee030114782480463)
-
-【💕源码获取方式在最后噢~💕】
 
 # 环境配置
 
@@ -42,7 +37,6 @@ sudo reboot
 sudo apt-get update
 sudo apt install wget -y
 wget http://fishros.com/install -O fishros && sudo bash fishros
-
 
 # 安装远程显示服务程序
 sudo apt-get install x11-xserver-utils
@@ -102,14 +96,6 @@ sudo apt-get install fonts-droid-fallback ttf-wqy-zenhei ttf-wqy-microhei fonts-
 colcon build
 ```
 
-❇️运行`panda_moveit_config`的`demo.launch.py`
-
-```shell
-source install/setup.bash
-ros2 launch panda_moveit_config demo.launch.py
-```
-启动rviz2后，可以看到机械臂会有干涉，现手动调整到不干涉的位置，然后才使用moveitpy控制机械臂，否则无法控制机械臂。
-
 ❇️运行`moveitpy_controller`
 
 ```shell
@@ -117,6 +103,17 @@ ros2 launch panda_moveit_config demo.launch.py
 source install/setup.bash
 ros2 launch control_server arm_control.launch.py
 ```
+
+
+❇️运行`panda_moveit_config`的`demo.launch.py`
+
+```shell
+# 打开新的终端
+source install/setup.bash
+ros2 launch panda_moveit_config demo.launch.py
+```
+启动rviz2后，可以看到机械臂会有干涉，现手动调整到不干涉的位置，然后才使用moveitpy控制机械臂，否则无法控制机械臂。
+
 
 ❇️运行`graph_executer_controller`
 
@@ -163,5 +160,3 @@ self.scene().setSelectionArea(
     mode=QtCore.Qt.ItemSelectionMode.IntersectsItemShape
 )
 ```
-
-❤️源码获取方式：关注微信公众号：AutoURobot，回复：LLMControlsArm

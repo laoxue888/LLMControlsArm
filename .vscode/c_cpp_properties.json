@@ -6,9 +6,9 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/root/llm_controls_arm_ws/install/niryo_moveit/include/**",
+        "/home/xsf/Documents/llm_controls_arm_ws/install/niryo_moveit/include/**",
         "/opt/ros/jazzy/include/**",
-        "/root/llm_controls_arm_ws/src/niryo_moveit/include/**",
+        "/home/xsf/Documents/llm_controls_arm_ws/niryo_moveit/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

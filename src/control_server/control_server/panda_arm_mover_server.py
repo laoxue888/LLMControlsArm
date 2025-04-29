@@ -16,6 +16,7 @@ from moveit.planning import (
 from moveit.core.kinematic_constraints import construct_joint_constraint
 from panda_arm_msg.srv import ControlRvizArm, ControlRvizArm_Response
 import numpy as np
+
 def plan_and_execute(
     robot,
     planning_component,

@@ -1,0 +1,7 @@
+/res/models/VOSK
+/res/models/FunASR
+/logs/*.txt
+/.idea
+/test
+/NodeGraphQt
+*.pyc

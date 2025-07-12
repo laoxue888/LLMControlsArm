@@ -104,6 +104,13 @@ sudo locale-gen
 sudo apt-get install fonts-droid-fallback ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-ukai fonts-arphic-uming
 ```
 
+# 下载项目
+
+```shell
+git clone --recurse-submodules https://github.com/laoxue888/LLMControlsArm.git
+
+```
+
 # 运行测试
 
 ❇️编译项目

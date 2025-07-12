@@ -54,12 +54,14 @@ colcon build
 
 ```shell
 # 打开新的终端
+cd LLMControlsArm/ros2_project
 source install/setup.bash
 ros2 launch control_server arm_control.launch.py
 ```
 
 ```shell
 # 打开新的终端
+cd LLMControlsArm/ros2_project
 source install/setup.bash
 ros2 launch panda_moveit_config demo.launch.py
 ```
@@ -68,8 +70,9 @@ ros2 launch panda_moveit_config demo.launch.py
 
 ```shell
 # 打开新的终端
+cd LLMControlsArm/ros2_project
 source install/setup.bash
-cd src/graph_executer_controller
+cd src/GraphExecuter/graph_executer
 python3 main.py
 ```
 

@@ -39,9 +39,16 @@ git clone --recurse-submodules https://github.com/laoxue888/LLMControlsArm.git
 
 > 这个服务可以让Docker容器访问宿主机的音频设备。
 
-![alt text](images/image.png)
+<div align="center">
 
-```shell    
+<img src="images/image.png" alt="描述" style="width:400px;">
+
+</div>
+
+❇️编译运行
+
+```shell 
+cd ros2_project
 colcon build
 ```
 

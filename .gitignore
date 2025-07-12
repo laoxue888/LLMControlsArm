@@ -1,3 +1,4 @@
 *.pyc
 /src/_docs/my_learn
 /.vscode
+/pulseaudio

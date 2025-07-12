@@ -48,7 +48,7 @@ git clone --recurse-submodules https://github.com/laoxue888/LLMControlsArm.git
 ❇️编译运行
 
 ```shell 
-cd ros2_project
+cd LLMControlsArm/ros2_project
 colcon build
 ```
 

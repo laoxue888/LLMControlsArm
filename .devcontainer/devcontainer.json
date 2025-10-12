@@ -1,0 +1,60 @@
+
+{
+	/* 显示在UI上的容器名称 */
+	"name": "LLMControlsArm",
+	/* 加载本地的文件夹到镜像的/workspaces文件夹 */
+	"workspaceMount": "source=${localWorkspaceFolder},target=/root/workspace,type=bind",
+	/* 容器内的工作空间文件夹路径，也就是说容器运行后打开的就是这个文件夹 */
+	"workspaceFolder": "/root/workspace",
+	/* 当容器创建时所下载的VSCODE插件挂载到容器target的路径下，
+		这样再rebuild容器时不用再次下载VSCODE插件
+	*/
+	"mounts": [
+		"source=extensionCache,target=/root/.vscode-server/extensions,type=volume",
+	],
+	/* 根据Dockerfile的内容创建容器 */
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	// /* 将配置插件的相关参数复印到容器中去 */
+	// "settings": {
+	// 	"idf.showOnboardingOnInit": false,
+	// 	"idf.toolsPath": "/opt/esp",
+	// 	"idf.espIdfPath": "/opt/esp/idf",
+	// 	"terminal.integrated.shell.linux": "/bin/bash"
+	// },
+	/* 选择容器在创建时，需要安装的插件 */
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-themes",
+				"morningfrog.urdf-visualizer",
+				"xelad0m.jupyter-toc",
+				"mikeburgh.xml-format",
+				"esbenp.prettier-vscode",
+				"tonka3000.qtvsctools",
+				"TheQtCompany.qt-ui",
+				"theqtcompany.qt-cpp",
+				"vector-wlc.qtconfigure",
+				"DamianKoper.gdb-debug",
+				"yzhang.markdown-all-in-one",
+				"zcs.md-ppt"
+			]
+		}
+	},
+	"userEnvProbe": "loginInteractiveShell",
+	// /* 使用特权的方式启动容器，否则在镜像中将无法访问usbip绑定的USB设备 */
+	"runArgs": [
+		// "--privileged",
+		"--gpus=all",
+		"--pid=host",
+		// "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+		// "-p", "6080:80",
+		// "-p", "15901:5901",
+		// "-p", "10000:10000",
+		"-e", "DISPLAY=host.docker.internal:0.0",
+		"-e", "PULSE_SERVER=host.docker.internal"
+	]
+}

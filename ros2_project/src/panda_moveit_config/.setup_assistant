@@ -1,13 +1,13 @@
 moveit_setup_assistant_config:
   urdf:
-    package: panda_description
+    package: robot_description
     relative_path: urdf/panda.urdf
   srdf:
     relative_path: config/panda.srdf
   package_settings:
     author_name: laoxue
     author_email: laoxue@qq.com
-    generated_timestamp: 1744382271
+    generated_timestamp: 1756197603
   control_xacro:
     command:
       - position

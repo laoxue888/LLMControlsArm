@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="arm_and_table">
+    <scene>
+      <shadows>0</shadows>
+    </scene>
+
+    <gui>
+      <camera name="user_camera">
+        <pose>0.75 -0.75 1.4 0 0.29 2.21</pose>
+      </camera>
+    </gui>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="table">
+      <static>true</static>
+      <include>
+        <uri>model://table</uri>
+      </include>
+      <pose>0.29 0 0 0 0 1.5708</pose>
+    </model>
+
+    <model name="bolt1">
+      <include>
+        <uri>model://bolt</uri>
+      </include>
+      <pose>0.5 0.35 1.05 0 1.5 0</pose>
+    </model>
+
+    <model name="bolt2">
+      <include>
+        <uri>model://bolt</uri>
+      </include>
+      <pose>0.25 0.63 1.05 0 -1.5 -2.82</pose>
+    </model>
+
+    <model name="bolt3">
+      <include>
+        <uri>model://bolt</uri>
+      </include>
+      <pose>0.11 0.53 1.05 0 -1.5 -1.0</pose>
+    </model>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <include>
+        <uri>model://ground_plane</uri>
+      </include>
+    </model>
+  </world>
+</sdf>

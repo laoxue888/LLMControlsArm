@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.4.1 commit date:2022-12-19, commit time:17:00, hash:55485cb379f7</authoring_tool>
+    </contributor>
+    <created>2024-09-23T18:40:59</created>
+    <modified>2024-09-23T18:40:59</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.4492965 0.415745 0.4575313 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="finger_new-mesh" name="finger_new">
+      <mesh>
+        <source id="finger_new-mesh-positions">
+          <float_array id="finger_new-mesh-positions-array" count="168">-10 0.5743756 27.51321 -10 2.698082 0 10 0.5743756 27.51321 10 2.698082 0 10 26.43138 0 -10 26.43138 0 10 25.25341 19.03659 -10 25.25341 19.03659 10 14.22031 54 -10 14.22031 54 10 2 54 -10 2 54 10 2.230151 27.70055 10 6.649454 50.58465 10 7.998243 49.60615 10 5.182497 51.37504 10 6.846021 29.54142 10 5.394087 28.72375 10 9.204897 48.45694 10 10.24797 47.15745 10 11.10893 45.73076 10 3.623445 51.9633 10 2 52.33896 10 3.846295 28.10647 10 12.47944 39.28336 10 12.27324 37.62983 10 11.84892 36.01842 10 11.21405 34.47776 10 10.37989 33.03524 10 9.361272 31.71649 10 8.176298 30.54494 10 11.77248 44.20223 10 12.22682 42.59902 10 12.46388 40.94963 -10 11.77248 44.20223 -10 11.10893 45.73076 -10 5.394087 28.72375 -10 3.846295 28.10647 -10 2.230151 27.70055 -10 6.846021 29.54142 -10 8.176298 30.54494 -10 9.361272 31.71649 -10 10.37989 33.03524 -10 10.24797 47.15745 -10 9.204897 48.45694 -10 7.998243 49.60615 -10 6.649454 50.58465 -10 5.182497 51.37504 -10 3.623445 51.9633 -10 2 52.33896 -10 11.21405 34.47776 -10 11.84892 36.01842 -10 12.27324 37.62983 -10 12.47944 39.28336 -10 12.46388 40.94963 -10 12.22682 42.59902</float_array>
+          <technique_common>
+            <accessor source="#finger_new-mesh-positions-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="finger_new-mesh-normals">
+          <float_array id="finger_new-mesh-normals-array" count="189">0 -0.9970342 -0.07695966 0 -0.9970342 -0.07695966 0 0 -1 0 0.998091 0.0617612 0 0.998091 0.0617609 0 0.9536451 0.3009335 0 0 1 1 0 0 1 3.88551e-7 0 1 -1.697e-7 0 1 2.2523e-7 0 1 -2.12226e-7 0 1 7.94981e-7 0 1 -9.05912e-7 0 1 3.1222e-7 0 1 -9.59662e-7 0 1 7.27652e-7 0 -1 0 0 -1 -9.05912e-7 0 -1 0 0 -1 2.2523e-7 0 -1 7.27652e-7 0 -1 1.48579e-7 0 0 -0.1124271 0.9936601 0 -0.112427 0.9936601 0 -0.2435996 0.9698759 0 -0.3704399 0.9288565 0 -0.3704396 0.9288566 0 -0.4906977 0.87133 0 -0.4906979 0.8713298 0 -0.6022303 0.7983225 0 -0.6022298 0.7983228 0 -0.7030674 0.7111233 0 -0.7914057 0.6112914 0 -0.7914062 0.6112908 0 -0.8656821 0.5005942 0 -0.9245762 0.3809975 0 -0.9245764 0.3809967 0 -0.9670354 0.2546421 0 -0.9670357 0.2546413 0 -0.9923142 0.1237442 0 -0.9999565 -0.009337425 0 -0.9999565 -0.009338319 0 -0.989829 -0.1422627 0 -0.9898288 -0.1422645 0 -0.9621113 -0.2726571 0 -0.9621115 -0.2726563 0 -0.9172953 -0.3982077 0 -0.9172956 -0.398207 0 -0.8561809 -0.5166763 0 -0.8561804 -0.516677 0 -0.779849 -0.6259679 0 -0.7798494 -0.6259673 0 -0.6896599 -0.7241335 0 -0.6896594 -0.7241339 0 -0.5872149 -0.8094311 0 -0.5872145 -0.8094315 0 -0.474328 -0.8803482 0 -0.4743278 -0.8803484 0 -0.3530254 -0.9356138 0 -0.3530253 -0.9356139 0 -0.2254399 -0.9742572 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#finger_new-mesh-normals-array" count="63" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="finger_new-mesh-vertices">
+          <input semantic="POSITION" source="#finger_new-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_001-material" count="108">
+          <input semantic="VERTEX" source="#finger_new-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#finger_new-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 2 1 1 1 3 1 4 2 3 2 5 2 5 2 3 2 1 2 6 3 4 3 7 3 7 4 4 4 5 4 8 5 6 5 9 5 9 5 6 5 7 5 10 6 8 6 11 6 11 6 8 6 9 6 12 7 2 7 3 7 13 7 14 7 8 7 13 7 8 7 15 7 4 8 16 8 17 8 14 7 18 7 8 7 8 7 18 7 19 7 8 7 19 7 20 7 15 7 8 7 21 7 21 7 8 7 10 7 21 7 10 7 22 7 4 7 17 7 3 7 3 7 17 7 23 7 3 9 23 9 12 9 24 7 25 7 6 7 6 7 25 7 26 7 6 7 26 7 27 7 27 7 28 7 6 7 6 10 28 10 29 10 6 11 29 11 4 11 4 12 29 12 30 12 4 13 30 13 16 13 20 7 31 7 8 7 8 7 31 7 32 7 8 14 32 14 6 14 6 15 32 15 33 15 6 16 33 16 24 16 9 17 34 17 35 17 36 17 5 17 37 17 37 17 5 17 1 17 37 17 1 17 38 17 38 17 1 17 0 17 36 17 39 17 5 17 5 18 39 18 40 18 5 19 40 19 7 19 7 17 40 17 41 17 7 20 41 20 42 20 35 17 43 17 9 17 9 17 43 17 44 17 9 17 44 17 45 17 45 17 46 17 9 17 9 17 46 17 47 17 9 17 47 17 11 17 11 17 47 17 48 17 11 17 48 17 49 17 42 17 50 17 7 17 7 17 50 17 51 17 7 17 51 17 52 17 52 17 53 17 7 17 7 21 53 21 54 21 7 22 54 22 9 22 9 17 54 17 55 17 9 17 55 17 34 17 0 23 2 23 38 23 38 24 2 24 12 24 38 25 12 25 37 25 37 25 12 25 23 25 37 26 23 26 36 26 36 27 23 27 17 27 36 28 17 28 39 28 39 29 17 29 16 29 39 30 16 30 40 30 40 31 16 31 30 31 40 32 30 32 41 32 41 32 30 32 29 32 41 33 29 33 42 33 42 34 29 34 28 34 42 35 28 35 50 35 50 35 28 35 27 35 50 36 27 36 51 36 51 37 27 37 26 37 51 38 26 38 52 38 52 39 26 39 25 39 52 40 25 40 53 40 53 40 25 40 24 40 53 41 24 41 54 41 54 42 24 42 33 42 54 43 33 43 55 43 55 44 33 44 32 44 55 45 32 45 34 45 34 46 32 46 31 46 34 47 31 47 35 47 35 48 31 48 20 48 35 49 20 49 43 49 43 50 20 50 19 50 43 51 19 51 44 51 44 52 19 52 18 52 44 53 18 53 45 53 45 54 18 54 14 54 45 55 14 55 46 55 46 56 14 56 13 56 46 57 13 57 47 57 47 58 13 58 15 58 47 59 15 59 48 59 48 60 15 60 21 60 48 61 21 61 49 61 49 61 21 61 22 61 22 62 10 62 49 62 49 62 10 62 11 62</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="finger_new" name="finger_new" type="NODE">
+        <matrix sid="transform">0.001 0 0 0 0 0.001 0 0 0 0 0.001 0 0 0 0 1</matrix>
+        <instance_geometry url="#finger_new-mesh" name="finger_new">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

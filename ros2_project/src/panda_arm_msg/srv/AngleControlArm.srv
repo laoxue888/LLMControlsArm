@@ -1,0 +1,9 @@
+# 每个关节位置
+float64[] position
+# 开合
+float64 gripper_width
+---
+# 是否发出成功
+trajectory_msgs/JointTrajectory joint_trajectory
+bool success
+

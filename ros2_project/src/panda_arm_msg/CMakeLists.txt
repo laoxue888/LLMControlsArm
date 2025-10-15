@@ -22,6 +22,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ControlRvizArm.srv"
+  "srv/AngleControlArm.srv"
+  "srv/TargetControlArm.srv"
   DEPENDENCIES std_msgs geometry_msgs sensor_msgs trajectory_msgs object_recognition_msgs shape_msgs 
  )
  ament_export_dependencies(rosidl_default_runtime)

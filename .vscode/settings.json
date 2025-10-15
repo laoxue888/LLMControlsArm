@@ -1,3 +1,13 @@
 {
-    "idf.pythonInstallPath": "/usr/bin/python3"
+    "python.autoComplete.extraPaths": [
+        "/root/workspace/ros2_project/install/**",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/root/workspace/ros2_project/install/**",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "cmake.sourceDirectory": "/workspaces/ros2_projects/3_BalanceCarSimulation/install",
+    //配置好Python编译器，从而可实现正确引用
+    "idf.pythonInstallPath": "/root/ros2_env/bin/python3"
 }

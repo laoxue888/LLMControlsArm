@@ -3,7 +3,7 @@
 
 ## 前言
 
-| ![alt text](images/deepseek.gif) |![alt text](images/dongzuo.gif) |
+| ![alt text](docs/1_Installation/images/deepseek.gif) |![alt text](docs/1_Installation/images/dongzuo.gif) |
 |:----------------:|:----------------:|
 | *DeepSeek控制*       |*机械臂末端位置编排*       |
 
@@ -25,7 +25,7 @@
 - Ubuntu:24.04
 - Ros2:jazzy
 
-[👉installation.md👈](./docs/installation.md)
+[👉installation.md👈](./docs/1_Installation/installation2.md)
 
 ## 下载项目
 
@@ -41,27 +41,27 @@ git clone --recurse-submodules https://github.com/laoxue888/LLMControlsArm.git
 
 <div align="center">
 
-<img src="images/image.png" alt="描述" style="width:400px;">
+<img src="docs/1_Installation/images/image.png" alt="描述" style="width:400px;">
 
 </div>
 
 ❇️编译运行
 
 ```shell 
-cd LLMControlsArm/ros2_project
+cd /root/workspace/ros2_project
 colcon build
 ```
 
 ```shell
 # 打开新的终端
-cd LLMControlsArm/ros2_project
+cd /root/workspace/ros2_project
 source install/setup.bash
 ros2 launch control_server arm_control.launch.py
 ```
 
 ```shell
 # 打开新的终端
-cd LLMControlsArm/ros2_project
+cd /root/workspace/ros2_project
 source install/setup.bash
 ros2 launch panda_moveit_config demo.launch.py
 ```
@@ -70,9 +70,10 @@ ros2 launch panda_moveit_config demo.launch.py
 
 ```shell
 # 打开新的终端
-cd LLMControlsArm/ros2_project
+cd /root/workspace/ros2_project
 source install/setup.bash
-cd src/GraphExecuter/graph_executer
+
+cd /root/workspace/GraphExecuter/graph_executer
 python3 main.py
 ```
 

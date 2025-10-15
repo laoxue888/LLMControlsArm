@@ -2,3 +2,8 @@
 /src/_docs/my_learn
 /.vscode
 /pulseaudio
+/backups
+log/
+install/
+build/
+/downloads

@@ -17,7 +17,8 @@
   <author email="laoxue@qq.com">laoxue</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-
+  <exec_depend>panda_description</exec_depend>
+  <exec_depend>rclcpp</exec_depend>
   <exec_depend>moveit_ros_move_group</exec_depend>
   <exec_depend>moveit_kinematics</exec_depend>
   <exec_depend>moveit_planners</exec_depend>
@@ -36,7 +37,7 @@
   <exec_depend>moveit_ros_visualization</exec_depend>
   <exec_depend>moveit_ros_warehouse</exec_depend>
   <exec_depend>moveit_setup_assistant</exec_depend>
-  <exec_depend>panda_description</exec_depend>
+  <exec_depend>robot_description</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>rviz2</exec_depend>
   <exec_depend>rviz_common</exec_depend>

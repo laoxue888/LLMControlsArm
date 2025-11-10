@@ -15,6 +15,7 @@
 
 **video**：
 
+- [2025-11-10：MCP：让大语言模型可以动手干活](https://blog.csdn.net/laoxue123456/article/details/154660217)
 - [2025-4-29：超实用的panda机械臂末端位置编排方法](https://www.bilibili.com/video/BV17zGmzLEUL/?vd_source=3bf4271e80f39cfee030114782480463)
 - [2025-4-28：【开源】通过DeepSeek大语言模型控制panda机械臂，听懂人话，拟人性回答。智能机械臂助手又进一步啦](https://www.bilibili.com/video/BV15ALCzNE9S/?vd_source=3bf4271e80f39cfee030114782480463)
 

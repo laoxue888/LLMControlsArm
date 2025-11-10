@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机械臂控制系统</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 机械臂控制系统</h1>
+            <p>实时控制与状态监控</p>
+        </div>
+
+    <div class="content">
+        <!-- 控制面板 -->
+        <div class="control-panel">
+            <h2 class="panel-title">🎮 控制面板</h2>
+            
+            <div class="joint-control">
+                <div class="joint-name">Joint1</div>
+                <div class="slider-container">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="joint1Slider">
+                    <div class="value-display" id="joint1Value">0°</div>
+                </div>
+            </div>
+
+            <div class="joint-control">
+                <div class="joint-name">Joint2</div>
+                <div class="slider-container">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="joint2Slider">
+                    <div class="value-display" id="joint2Value">0°</div>
+                </div>
+            </div>
+
+            <div class="joint-control">
+                <div class="joint-name">Joint3</div>
+                <div class="slider-container">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="joint3Slider">
+                    <div class="value-display" id="joint3Value">0°</div>
+                </div>
+            </div>
+
+            <div class="joint-control">
+                <div class="joint-name">Joint4</div>
+                <div class="slider-container">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="joint4Slider">
+                    <div class="value-display" id="joint4Value">0°</div>
+                </div>
+            </div>
+
+            <div class="joint-control">
+                <div class="joint-name">Joint5</div>
+                <div class="slider-container">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="joint5Slider">
+                    <div class="value-display" id="joint5Value">0°</div>
+                </div>
+            </div>
+
+            <div class="joint-control">
+                <div class="joint-name">Joint6</div>
+                <div class="slider-container">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="joint6Slider">
+                    <div class="value-display" id="joint6Value">0°</div>
+                </div>
+            </div>
+
+            <div class="joint-control">
+                <div class="joint-name">Joint7</div>
+                <div class="slider-container">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="joint7Slider">
+                    <div class="value-display" id="joint7Value">0°</div>
+                </div>
+            </div>
+
+            <div class="gripper-size-control">
+                <div class="joint-name">夹具开度大小</div>
+                <div class="slider-container">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="gripperSizeSlider">
+                    <div class="value-display" id="gripperSizeValue">0%</div>
+                </div>
+            </div>
+
+            <div class="gripper-control" style="margin-top: 15px;">
+                <button class="btn btn-primary" id="resetArm">重置机械臂</button>
+            </div>
+        </div>
+
+        <!-- 状态面板 -->
+        <div class="status-panel">
+            <h2 class="panel-title">📊 状态监控</h2>
+            
+            <div class="status-item">
+                <span class="status-label">Joint1 角度</span>
+                <span class="status-value" id="statusJoint1">0°</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Joint2 角度</span>
+                <span class="status-value" id="statusJoint2">0°</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Joint3 角度</span>
+                <span class="status-value" id="statusJoint3">0°</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Joint4 角度</span>
+                <span class="status-value" id="statusJoint4">0°</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Joint5 角度</span>
+                <span class="status-value" id="statusJoint5">0°</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Joint6 角度</span>
+                <span class="status-value" id="statusJoint6">0°</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Joint7 角度</span>
+                <span class="status-value" id="statusJoint7">0°</span>
+            </div>
+
+            <div class="status-item gripper-status">
+                <span class="status-label">夹具状态</span>
+                <span class="status-value" id="statusGripper">关闭</span>
+            </div>
+
+            <div class="status-item gripper-status">
+                <span class="status-label">夹具开度</span>
+                <span class="status-value" id="statusGripperSize">0%</span>
+            </div>
+
+            <div class="message-log">
+                <div class="log-entry success">
+                    <span class="log-time">[系统]</span> 机械臂控制系统已就绪
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

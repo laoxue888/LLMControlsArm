@@ -52,18 +52,18 @@ cd /root/workspace/ros2_project
 colcon build
 ```
 
-```shell
+<!-- ```shell
 # 打开新的终端
 cd /root/workspace/ros2_project
 source install/setup.bash
 ros2 launch control_server arm_control.launch.py
-```
+``` -->
 
 ```shell
 # 打开新的终端
 cd /root/workspace/ros2_project
 source install/setup.bash
-ros2 launch panda_moveit_config demo.launch.py
+ros2 launch panda_moveit_config gazebo.launch.py
 ```
 > 启动rviz2后，可以看到机械臂会有干涉，必须手动调整到不干涉的位置，然后才使用moveitpy控制机械臂，否则无法控制机械臂。
 

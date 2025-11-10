@@ -8,7 +8,7 @@ from langchain_openai import ChatOpenAI
 
 # 配置常量 - 从环境变量读取，提供默认值用于开发
 BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
-API_KEY = os.getenv("OPENAI_API_KEY", "sk-9d807dfca92d45cab7350e7a3180a365")
+API_KEY = os.getenv("OPENAI_API_KEY", "your api key")
 MODEL_NAME = os.getenv("OPENAI_MODEL", "deepseek-chat")
 async def main():
     """主函数 - 运行 MCP 客户端测试"""

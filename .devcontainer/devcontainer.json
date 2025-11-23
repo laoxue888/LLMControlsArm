@@ -54,6 +54,7 @@
 		// "-p", "6080:80",
 		// "-p", "15901:5901",
 		// "-p", "10000:10000",
+		"-p", "5173:5173",
 		"-e", "DISPLAY=host.docker.internal:0.0",
 		"-e", "PULSE_SERVER=host.docker.internal"
 	]

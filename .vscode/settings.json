@@ -9,5 +9,5 @@
     ],
     "cmake.sourceDirectory": "/workspaces/ros2_projects/3_BalanceCarSimulation/install",
     //配置好Python编译器，从而可实现正确引用
-    "idf.pythonInstallPath": "/root/ros2_env/bin/python3"
+    "idf.pythonInstallPath": "/usr/bin/python3"
 }
